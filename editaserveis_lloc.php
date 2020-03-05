@@ -9,13 +9,11 @@
 
 		require('connection.php');
 
-		$sql = "UPDATE serveis_lloc SET id_servei = '".$_REQUEST['id_servei']."',
-				,
-				id_servei = '".$_REQUEST['id_servei']."',
+		$sql = "UPDATE servei_lloc SET id_servei = id_servei = '".$_REQUEST['id_servei']."',
 				id_lloc = '".$_REQUEST['id_lloc']."',
 				actiu = '".$_REQUEST['actiu']."',
 				avariat = '".$_REQUEST['avariat']."', 
-				WHERE id ='".$_REQUEST['id_servei']."'";
+				WHERE id ='".$_REQUEST['id']."'";
 
 		echo $sql."<br/>";
 

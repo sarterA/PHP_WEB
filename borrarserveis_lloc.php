@@ -7,7 +7,7 @@
 	<?php
 
 	require('connection.php');
-	$sql = "DELETE FROM serveis_lloc WHERE id_servei='".$_REQUEST['id_servei']."'";
+	$sql = "DELETE FROM servei_lloc WHERE id='".$_REQUEST['id']."'";
 	mysqli_query($con, $sql) or die();
 	require('close.php');
 	

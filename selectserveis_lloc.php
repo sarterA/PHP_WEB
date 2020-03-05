@@ -35,10 +35,11 @@
 		<tbody>
 	<?php
 		require('connection.php');
-		$sql = "SELECT * FROM serveis_lloc ORDER BY id_servei";
+		$sql = "SELECT * FROM serveis_lloc ORDER BY id";
 		$rs = mysqli_query($con, $sql) or die();
 			while($row = mysqli_fetch_array($rs)){
 				echo "<tr>";
+					echo "<td>".$row['id']."</td>";
 					echo "<td>".$row['id_servei']."</td>";
 					echo "<td>".$row['id_lloc']."</td>";
 					echo "<td>".$row['actiu']."</td>";
